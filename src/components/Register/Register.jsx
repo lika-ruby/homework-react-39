@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations.js";
-import { Formik, ErrorMessage } from "formik";
+import { Formik } from "formik";
 import { useSelector } from "react-redux";
 import { selectError } from "../../redux/auth/selectors.js";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,7 @@ import {
   FormS,
   Label,
   Input,
+  ErrorMes,
   ErrorText,
   Button,
 } from "./Register.js";
@@ -70,19 +71,19 @@ const Register = () => {
             Your name
             <Input type="text" name="name" placeholder="Romana" />
           </Label>
-          <ErrorMessage name="name" component="p" />
+          <ErrorMes name="name" component="p" />
 
           <Label>
             Your email
             <Input type="email" name="email" placeholder="my.email@gmail.com" />
           </Label>
-          <ErrorMessage name="email" component="p" />
+          <ErrorMes name="email" component="p" />
 
           <Label>
             Your password
             <Input type="password" name="password" placeholder="**********" />
           </Label>
-          <ErrorMessage name="password" component="p" />
+          <ErrorMes name="password" component="p" />
           {error && (
             <ErrorText>Your email or/and password are not suitable</ErrorText>
           )}

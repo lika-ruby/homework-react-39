@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Form } from "formik";
 import { Field } from "formik";
+import { ErrorMessage } from "formik";
 
 export const Wrapper = styled.div`
   width: 700px;
@@ -50,6 +51,12 @@ export const Input = styled(Field)`
   &:focus {
     border-color: #980000;
   }
+`;
+
+export const ErrorMes = styled(ErrorMessage)`
+  color: #ff4d4d;
+  font-size: 18px;
+  font-weight: 500;
 `;
 
 export const ErrorText = styled.p`

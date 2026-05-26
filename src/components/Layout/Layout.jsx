@@ -38,9 +38,6 @@ export const Layout = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <Site>
-      <UserText>{token}</UserText>
-      <UserText>{isLoggedIn}</UserText>
-      {console.log(isLoggedIn)}
       <Header>
         <Container>
           <Wrapper>
