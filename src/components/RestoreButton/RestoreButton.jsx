@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { restoreContactsApi } from "../../redux/operations.js";
+import { restoreContactsApi } from "../../redux/contacts/operations.js";
 import { Button } from "./RestoreButton.js";
-import { selectLastDeletedContact } from "../../redux/selectors.js";
+import { selectLastDeletedContact } from "../../redux/contacts/selectors.js";
 
 export const RestoreButton = () => {
   const dispatch = useDispatch();

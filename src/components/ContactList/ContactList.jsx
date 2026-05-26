@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import {
   selectFilteredContacts,
   selectLastDeletedContact,
-} from "../../redux/selectors.js";
+} from "../../redux/contacts/selectors.js";
 
 export const ContactList = () => {
   const lastDeletedContact = useSelector(selectLastDeletedContact);

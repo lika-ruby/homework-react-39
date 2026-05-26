@@ -1,7 +1,22 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 108px 0;
+`;
+
+
 export const Form = styled.form`
-    margin-top: 48px;
+`;
+
+export const Title = styled.h2`
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 32px;
 `;
 
 export const Labels = styled.label`
